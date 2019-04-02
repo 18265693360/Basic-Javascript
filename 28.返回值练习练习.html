@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    /*
+    * 判断一个数是否为偶数 是为true 不是为false
+    *
+    * */
+    function  isOu(num){
+        return num %  2 == 0
+    }
+    var result = isOu(13)
+    console.log("result = "+result)
+
+    /*
+    * 定义一个函数 可以根据半径计算一个圆的面积 并返回计算结果
+    *
+    * */
+    var π = 3.14
+    function mianji(r) {
+        return π*r*r
+    }
+    result = mianji(23)
+
+    console.log("result="+result)
+
+    /*
+    *创建一个函数 可以在控制台中输出一个人的信息
+    * 可以输入 name age gender address
+    * 参数过多 容易出现错乱
+    * */
+    // function sayHollow(name,age,gender,address){
+    function sayHollow(o){
+        // console.log("我是"+name+",今年我"+age+"岁了,"+"我是一位"+gender+",我住在"+address)
+        console.log("我是"+o.name+",今年我"+o.age+"岁了,"+"我是一位"+o.gender+",我住在"+o.address)
+        // 类似CCS 样式对应属性
+    }
+    var obj = {
+        gender:"成功人士",
+        name:"唐玄奘",
+        age:40,
+        address:"大雁塔",
+        gender:"女"
+        // 重复实参 后面的会覆盖前面的
+
+    }
+    /*sayHollow(obj)*/
+    // sayHollow("唐王御弟", 40,"得道高僧","大雁塔")
+
+    /*
+    *实参可以是一个对象，也可以是一个函数
+    * */
+    function fun(a) {
+        console.log("a="+a)
+        // a(obj)
+    }
+    // fun(sayHollow)
+    fun(function(){alert(hellow)})
+
+     fun(mianji(10))
+    fun(mianji)
+    /*
+    *mianji()
+    *- 调用函数
+    * - 相当于是使用的函数的返回值
+    * mianji
+    * - 函数对象
+    * - 相当于直接使用函数对象
+    * */
+</script>
+</html>

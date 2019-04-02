@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    // 向body 输出一个内容  <br /> 换行
+    // for(var i=0;i<7;i++){
+        // document.write("*****<br />")
+        // document.write("*")
+        // document.write("*")
+        // document.write("*")
+        // document.write("*")
+        // document.write("*")
+        // document.write("*")
+        /*
+        再循环的内部再添加一个循环。用来控制符号图形的宽度
+        外部7次 内部5次 高7 宽5
+        内层循环就是控制高度
+         */
+        for(var i=0;i<7;i++){
+
+        }
+        // for(var j=0;j<5;j++){
+        //     document.write("*&nbsp");
+        // }
+        // 输出一个换行
+   //      document.write("<br />")
+   // }
+
+        for(var i=0;i<5;i++){
+            for(var j=0;j<i+1;j++){
+                document.write("*&nbsp;&nbsp")
+            }
+            document.write("<br />")
+        }
+
+</script>
+</html>

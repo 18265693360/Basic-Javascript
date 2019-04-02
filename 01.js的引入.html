@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--<script>-->
+        <!--window.onload （这是要加的前缀） = function(){-->
+            <!--var btn = document.getElementById('btn')-->
+
+            <!--btn.onclick = function(){-->
+                <!--alert('我被点击了我')-->
+        <!--}-->
+    <!--</script>-->
+</head>
+<body>
+<!--<button onclick="console.log('我被点击了')">按钮</button> 行内 内联 且引号用法 外双内单 内胆外双-->
+<button id="btn">我是按钮</button>
+</body>
+<script src="outside.js%20input.js">
+外联 导入js  除了外联在在下面写js都不会有结果
+</script>
+<!--<script>-->
+      <!--// 对比两行代码不同 一个加类名前缀 一个不加-->
+      <!--// var btn= document.querySelector('#btn')-->
+      <!--// var btn= documten.getElementById('btn')-->
+      <!--//-->
+      <!--// btn.onclick = function () {-->
+      <!--//     alert('我被点击了')-->
+          <!--// 内联样式-->
+      <!--// }-->
+<!--</script>-->
+</html>

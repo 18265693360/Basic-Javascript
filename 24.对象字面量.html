@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    // var obj2 = new Object()
+    // obj2.name = "唐王御弟"
+    // obj2.gender = "男"
+    // obj2.age = 18
+    // 创建一个对象
+    var obj = new Object()
+    // 使用对象字面量来创建一个对象 甚至不用上面定义的 obj2 就可以实现
+    var obj = {}
+    // console.log(typeof obj)
+    obj.name = "孙悟空"
+    // console.log(obj.name)
+    /*
+    * 使用对象字面量，可以在创建对象时，直接指定对象中的属性
+    * 语法{属性名：+（冒号）属性值 ，逗号 属性名：+（冒号）属性值}
+    * */
+    // 结构清楚的方式
+    /*
+    * 对象字面量的属性名可以加引号 也可以不加引号 建议不加
+    * 如果用特殊的属性名要加 比如"#￥#@"=属性值
+    * 属性名和属性值是一一对应的关系
+    *属性名 和 属性值链接 用逗号隔开
+    * 一个属性后 没有属性值了就不要再添加逗号了
+    *
+    * */
+    var obj2 = {
+        name:"唐王御弟",
+        gender:"男",
+        age:"18",
+        just:{name:"shaheshang"}
+        // 对象字面量必须是冒号  不是等号  obj.name = "孙悟空"
+    }
+    console.log(obj2.just)
+</script>
+</html>

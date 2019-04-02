@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<htm lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+    // var demo = '全局变量'
+    // var num1 = 34;
+    // var num2 = 2;
+    // var num = 4;
+    // var num3 = 54;
+    //
+    // function getSum(number1 , number){
+    //     var demo = "随便什么字符"
+    //     console.log('求和的结果加上2之后是：')；
+    //     console.log(number1 + number2 + 2);
+    //     console.log('第三行代码')
+    //     console.log(demo)
+    // }
+    //
+    // console.log(demo1,demo2)
+    // getSum(num1,num2)
+    // console.log(demo)
+    // getSum(num3,num4);
+    // getSum(num1,num3);
+    var q = 110;
+    function  f(){
+        var p = 112;p
+        console.log("内部访问全局变量"+q);
+        console.log("内部访问局部变量"+p);
+    }
+    f();
+    console.log("外部访问全局变量"+q)
+    console.log("外部访问局部变量"+p)
+    // 小结：全局在函数内外都能访问，局部变量只能在函数内访问
+
+</script>
+</htm>

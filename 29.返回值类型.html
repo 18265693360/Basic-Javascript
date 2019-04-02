@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+</body>
+<script>
+    function fun(){
+        alert("函数要执行了")
+
+        for (var i=0; i<5 ; i++){
+            // console.log(i);
+
+            if(i == 2){
+                //break 退出当前循环
+                //break
+
+                //containue用于跳过当次循环 比如2 被跳过
+                //continue
+
+                //使用return 可以结束整个函数 下面语句不会继续执行
+                return
+
+            }
+            console.log(i)
+        }
+        alert("函数执行完了")
+    }
+
+
+    //fun()
+    /*
+    * 返回值可以是任意数据类型 任意数据类型就包括对象 一说对象就包括函数 但是对象能做的函数不一定能
+    * 也可以是一个对象 也可以是一个函数
+    * */
+    function fun2() {
+        // 返回一个对象
+        return {name:"玄奘大师"}
+        
+    }
+    var a = fun2()
+    // console.log("a = "+a.name)
+      
+     // return()
+    // console.log(fun2)
+
+    function fun3() {
+        // 在函数对象内部在声明一个函数
+        function fun4() {
+            alert("我是函数fun4");
+        }
+        // 将fun4作为函数对象作为返回值返回
+        return fun4;
+    }
+        a = fun3();
+        // console.log(a);
+        // a()
+    fun3()()
+</script>
+</html>

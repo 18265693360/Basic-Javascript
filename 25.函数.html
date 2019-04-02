@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    /*
+    * 函数  Function
+    * 函数也是一个对象
+    *函数可以封装一些功能（代码），在需要时可以执行这些功能（代码
+    *函数中可以保存一些代码在需要的时候调用
+    *使用typeof检查一个函数对象时，会返回function
+    *
+    * */
+    // {
+    //     console.log("我是第一行")；
+    //     console.log("我是第二行")；
+    //     console.log("我是第三行")；
+    // }
+    /*
+    *我们在实际开发中不会用构造函数来创建一个对象
+    *就是为了让我们明白原理
+
+    * */
+    // 创建一个函数对象
+    // 可以将要封装的代码以字符串的形式传递给构造函数
+    // 第一种函数几乎不会用
+    var fun = new Function("console.log('Hello 这是我的第一个函数')");
+    fun()
+    /*
+    * 封装到函数中的代码不会立即执行
+    * 函数中的代码会在函数调用的时候执行
+    * 调用函数语法 函数对象用（）
+    * 当调用函数时 函数中封装的代码 会按照顺序执行*/
+    // console.log(typeof fun);
+    // 第二种 相对简单
+    /*
+    * 使用函数表达式来创建一个函数
+    * var 函数名 = function ([形参1，形参2，形参。。。]){
+    * 语句。。。。
+    * }
+    * */
+    function fun2(){
+        console.log("这是我的第二个函数")
+        alert("呵呵呵呵")
+        document.write("hellow")
+    }
+    console.log(fun2)
+    // 调用fun2 可以一次性调用三个
+    fun2()
+
+    /*
+    *使用函数表达式来创建一个函数
+    * var 函数名 = function([形参1， 形参2。。。]){
+    * 语句。。。
+    * }
+    * */
+    var fun3 = function(){
+        console.log("sdafgrsarrashg")
+    }
+    fun3();
+</script>
+</html>
